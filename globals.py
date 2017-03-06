@@ -12,8 +12,8 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-year = "2014"  # Used by tba api calls
-first_event_wednesday = date(2014, 2, 26)  # used to convert timestamps to week numbers
+year = "2017"  # Used by tba api calls
+first_event_wednesday = date(2017, 3, 1)  # used to convert timestamps to week numbers
 mechanize_timeout = 30.0  # Seconds to wait for mechanize to gather data from tba
 debug_current_editable_week = 3  # Allow editing of this week and all weeks after this
 overestimate_of_frc_teams = 6000  # Makes getting all the teams in FRC slightly more efficient
@@ -22,11 +22,11 @@ draft_rounds = 5  # Number of rounds in a particular draft
 draft_time_minutes = 2  # Time per person per round
 number_of_locked_teams = 5  # Number of non-transferable teams to have at the top of the rankings
 
-maximum_roster_size = 30  # The maximum number of teams a player can have on their roster
+maximum_roster_size = 15  # The maximum number of teams a player can have on their roster
 maximum_active_teams = 6  # The maximum number of teams a player can have active at once
 
-number_of_official_weeks = 6  # Used in general to iterate over schedule
-number_of_round_robin_weeks = 6  # Used to create the schedule
+number_of_official_weeks = 7  # Used in general to iterate over schedule
+number_of_round_robin_weeks = 7  # Used to create the schedule
 
 #Used to store information for each player's success in each week
 record_win = 'W'
